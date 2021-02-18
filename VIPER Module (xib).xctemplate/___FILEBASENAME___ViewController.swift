@@ -19,7 +19,7 @@ class ___VARIABLE_ModuleName___ViewController: DefaultViewController {
     
 }
 
-// MARK: (Presenter -> View)
+// MARK: - (Presenter -> View)
 extension ___VARIABLE_ModuleName___ViewController: PresenterToView___VARIABLE_ModuleName___Protocol{
 
 }

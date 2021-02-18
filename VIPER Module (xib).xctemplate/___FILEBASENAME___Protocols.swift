@@ -8,12 +8,12 @@
 
 import Foundation
 
-// MARK: View Input (Presenter -> View)
+// MARK: - View Input (Presenter -> View)
 protocol PresenterToView___VARIABLE_ModuleName___Protocol {
    
 }
 
-// MARK: View Output/Presenter Input (View -> Presenter)
+// MARK: - View Output/Presenter Input (View -> Presenter)
 protocol ViewToPresenter___VARIABLE_ModuleName___Protocol {
     
     var view: PresenterToView___VARIABLE_ModuleName___Protocol? { get set }
@@ -23,18 +23,18 @@ protocol ViewToPresenter___VARIABLE_ModuleName___Protocol {
     func load()
 }
 
-// MARK: Interactor Input/Presenter Output (Presenter -> Interactor)
+// MARK: - Interactor Input/Presenter Output (Presenter -> Interactor)
 protocol PresenterToInteractor___VARIABLE_ModuleName___Protocol {
     
     var presenter: InteractorToPresenter___VARIABLE_ModuleName___Protocol? { get set }
 }
 
-// MARK: Interactor Output/Presenter Input (Interactor -> Presenter)
+// MARK: - Interactor Output/Presenter Input (Interactor -> Presenter)
 protocol InteractorToPresenter___VARIABLE_ModuleName___Protocol {
     
 }
 
-// MARK: Router Input (Presenter -> Router)
+// MARK: - Router Input (Presenter -> Router)
 protocol PresenterToRouter___VARIABLE_ModuleName___Protocol {
     
 }

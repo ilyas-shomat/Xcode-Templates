@@ -8,7 +8,7 @@
 
 import Foundation
 
-// MARK: (View -> Presenter)
+// MARK: - (View -> Presenter)
 class ___VARIABLE_ModuleName___Presenter: ViewToPresenter___VARIABLE_ModuleName___Protocol {
 
     var view: PresenterToView___VARIABLE_ModuleName___Protocol?
@@ -20,7 +20,7 @@ class ___VARIABLE_ModuleName___Presenter: ViewToPresenter___VARIABLE_ModuleName_
     }
 }
 
-// MARK: (Interactor -> Presenter)
+// MARK: - (Interactor -> Presenter)
 extension ___VARIABLE_ModuleName___Presenter: InteractorToPresenter___VARIABLE_ModuleName___Protocol {
     
 }

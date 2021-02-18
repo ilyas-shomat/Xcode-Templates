@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-// MARK: (Presenter -> Router)
+// MARK: - (Presenter -> Router)
 class ___VARIABLE_ModuleName___Router: PresenterToRouter___VARIABLE_ModuleName___Protocol {
     
     static func initiateModule() -> UIViewController {
