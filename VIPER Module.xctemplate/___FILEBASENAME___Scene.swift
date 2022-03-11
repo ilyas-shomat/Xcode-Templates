@@ -9,7 +9,7 @@
 import UIKit
 
 class ___VARIABLE_ModuleName___Scene {
-    static var instance: UIViewController {
+    var instance: UIViewController {
         let viewController = ___VARIABLE_ModuleName___ViewController()
         
         let presenter: ViewToPresenter___VARIABLE_ModuleName___Protocol & InteractorToPresenter___VARIABLE_ModuleName___Protocol = ___VARIABLE_ModuleName___Presenter()

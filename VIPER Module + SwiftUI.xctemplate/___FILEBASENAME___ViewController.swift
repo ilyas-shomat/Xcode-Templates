@@ -12,7 +12,6 @@ import Combine
 
 
 class ___VARIABLE_ModuleName___ViewController: UIViewController, ObservableObject {
-    
     var presenter: ViewToPresenter___VARIABLE_ModuleName___Protocol?
     var cancellables = Set<AnyCancellable>()
     
