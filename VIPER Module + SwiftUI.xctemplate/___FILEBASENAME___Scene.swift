@@ -7,19 +7,37 @@
 //
 
 import UIKit
+import SwiftUI
+import Combine
 
-class ___VARIABLE_ModuleName___Scene {
-    var instance: UIViewController {
-        let viewController = ___VARIABLE_ModuleName___ViewController()
+
+class ___VARIABLE_ModuleName___Scene: Scene, ObservableObject {
+    var presenter: ViewToPresenter___VARIABLE_ModuleName___Protocol?
+    var cancellables = Set<AnyCancellable>()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
+        setupView(
+            rootView: ___VARIABLE_ModuleName___View(scene: self)
+        )
+    }
+    
+    class func initiate() -> Scene {
+        let scene = ___VARIABLE_ModuleName___Scene()
         let presenter: ViewToPresenter___VARIABLE_ModuleName___Protocol & InteractorToPresenter___VARIABLE_ModuleName___Protocol = ___VARIABLE_ModuleName___Presenter()
         
-        viewController.presenter = presenter
-        viewController.presenter?.router = ___VARIABLE_ModuleName___Router()
-        viewController.presenter?.viewController = viewController
-        viewController.presenter?.interactor = ___VARIABLE_ModuleName___Interactor()
-        viewController.presenter?.interactor?.presenter = presenter
+        scene.presenter = presenter
+        scene.presenter?.router = ___VARIABLE_ModuleName___Router()
+        scene.presenter?.scene = scene
+        scene.presenter?.interactor = ___VARIABLE_ModuleName___Interactor()
+        scene.presenter?.interactor?.presenter = presenter
         
-        return viewController
+        return scene
     }
+}
+
+// MARK: - (Presenter -> View)
+extension ___VARIABLE_ModuleName___Scene: PresenterToView___VARIABLE_ModuleName___Protocol{
+
 }

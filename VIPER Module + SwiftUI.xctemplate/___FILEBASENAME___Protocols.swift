@@ -15,16 +15,13 @@ protocol PresenterToView___VARIABLE_ModuleName___Protocol {
 
 // MARK: - View Output/Presenter Input (View -> Presenter)
 protocol ViewToPresenter___VARIABLE_ModuleName___Protocol {    
-    var viewController: PresenterToView___VARIABLE_ModuleName___Protocol? { get set }
+    var scene: PresenterToView___VARIABLE_ModuleName___Protocol? { get set }
     var interactor: PresenterToInteractor___VARIABLE_ModuleName___Protocol? { get set }
     var router: PresenterToRouter___VARIABLE_ModuleName___Protocol? { get set }
-    
-    func load()
 }
 
 // MARK: - Interactor Input/Presenter Output (Presenter -> Interactor)
 protocol PresenterToInteractor___VARIABLE_ModuleName___Protocol {
-    
     var presenter: InteractorToPresenter___VARIABLE_ModuleName___Protocol? { get set }
 }
 

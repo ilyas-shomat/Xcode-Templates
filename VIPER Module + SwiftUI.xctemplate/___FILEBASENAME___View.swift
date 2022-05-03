@@ -10,10 +10,10 @@ import SwiftUI
 
 // MARK: - (Presenter -> Interactor)
 struct ___VARIABLE_ModuleName___View: View  {
-    @ObservedObject private var viewController: ___VARIABLE_ModuleName___ViewController
+    @ObservedObject private var scene: ___VARIABLE_ModuleName___Scene
     
-    init(viewController: ___VARIABLE_ModuleName___ViewController) {
-        self.viewController = viewController
+    init(scene: ___VARIABLE_ModuleName___Scene) {
+        self.scene = scene
     }
     
     var body: some View {

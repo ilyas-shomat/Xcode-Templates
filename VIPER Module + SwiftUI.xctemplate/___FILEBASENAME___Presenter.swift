@@ -10,13 +10,9 @@ import Foundation
 
 // MARK: - (View -> Presenter)
 class ___VARIABLE_ModuleName___Presenter: ViewToPresenter___VARIABLE_ModuleName___Protocol {
-    var viewController: PresenterToView___VARIABLE_ModuleName___Protocol?
+    var scene: PresenterToView___VARIABLE_ModuleName___Protocol?
     var interactor: PresenterToInteractor___VARIABLE_ModuleName___Protocol?
     var router: PresenterToRouter___VARIABLE_ModuleName___Protocol?
-    
-    func load() {
-        
-    }
 }
 
 // MARK: - (Interactor -> Presenter)
